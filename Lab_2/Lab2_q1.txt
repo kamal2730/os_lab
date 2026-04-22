@@ -1,0 +1,165 @@
+QUE1 : Execute all the commands explained in this section and write the output.
+ANSWER: 
+	
+	##GREP COMMAND :
+	
+	(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_2$ cat example.txt 
+	Example list :
+	Spain
+	France
+	England
+	Denmark
+	Germany
+	France
+	Germany
+	Germany
+	
+	(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_2$ grep Germany example.txt 
+	Germany
+	Germany
+	Germany
+	
+	(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_2$ grep --color France example.txt 
+	France
+	France
+	
+	(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_2$ grep ^D example.txt
+	Denmark
+	
+	(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_2$ grep -v Germany example.txt 
+	Example list :
+	Spain
+	France
+	England
+	Denmark
+	France
+	
+	
+	##SORT COMMAND:
+	
+	(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_2$ sort example.txt 
+	Denmark
+	England
+	Example list :
+	France
+	France
+	Germany
+	Germany
+	Germany
+	Spain
+	
+	(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_2$ sort -r example.txt 
+	Spain
+	Germany
+	Germany
+	Germany
+	France
+	France
+	Example list :
+	England
+	Denmark
+	
+	
+	##WC COMMAND:
+	
+	(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_2$ wc example.txt 
+	11 11 78 example.txt
+	
+	(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_2$ wc *
+	    11     11     78 example.txt
+	  1375   7894 419909 Lab 2 -Advanced_UNIX_Shell_Commands_With_Examples.pptx
+	  2377   9885 320919 Lab 2.pdf
+	    63    102   1098 Lab2_q1.txt
+	  3826  17892 742004 total
+
+	##CUT COMMAND:
+	
+	(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_2$ cut -c 1-3 example.txt 
+	Exa
+	Spa
+	Fra
+	Eng
+	Den
+	Ger
+	Fra
+	Ger
+	Ger
+	 
+	(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_2$ cut -c 1-3,6 example.txt 
+	Exal
+	Spa
+	Frae
+	Engn
+	Denr
+	Gern
+	Frae
+	Gern
+	Gern
+
+	(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_2$ cut -c3- example.txt 
+	ample list :
+	ain
+	ance
+	gland
+	nmark
+	rmany
+	ance
+	rmany
+	rmany
+ 
+
+	#SED COMMAND:
+	(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_2$ cat example.txt 
+	Example list :
+	Spain
+	France
+	England
+	Denmark
+	Germany
+	France
+	Germany
+	Germany
+	 
+
+	(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_2$ sed -e 's/Germany/Desturchland/' example.txt 
+	Example list :
+	Spain
+	France
+	England
+	Denmark
+	Desturchland
+	France
+	Desturchland
+	Desturchland
+	
+	##TR COMMAND:
+	(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_2$ cat example.txt 
+	Example list :
+	Spain
+	France
+	England
+	Denmark
+	Germany
+	France
+	Germany
+	Germany
+	 
+
+	(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_2$ tr 'a-z' 'A-Z' < example.txt 
+	EXAMPLE LIST :
+	SPAIN
+	FRANCE
+	ENGLAND
+	DENMARK
+	GERMANY
+	FRANCE
+	GERMANY
+	GERMANY
+	
+	##CHMOD COMMAND:
+	
+
+	
+	
+	
+
