@@ -1,0 +1,13 @@
+Example list :
+Spain
+France
+England
+Denmark
+Germany
+France
+Germany
+Germany
+ab
+cd.
+ef2
+United Kingdom

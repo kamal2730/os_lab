@@ -1,0 +1,98 @@
+command : head Lab1_1.txt
+output:
+# pwd
+/home/mca/Desktop/240905110_OSL/Lab_1
+
+# ls 
+dir1
+dir2
+Lab1_1.txt
+
+# ls -l
+total 12
+
+
+
+command: tail Lab1_1.txt
+output:
+Lab1_1.txt
+
+#date
+Wednesday 07 January 2026 10:12:51 AM IST
+
+#whereis ls
+ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz
+
+
+
+command : head -n 2 Lab1_1.txt >> Lab1_2.txt
+output:
+# pwd
+/home/mca/Desktop/240905110_OSL/Lab_1
+
+
+
+command : head -c 5 Lab1_1.txt >> Lab1_2.txt 
+output:
+# pwd
+
+
+
+command : tail -n 5 Lab1_1.txt >> Lab1_2.txt 
+output:
+#whereis ls
+ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz
+
+
+
+command : tail -c 25 Lab1_1.txt >> Lab1_2.txt
+output:
+hare/man/man1/ls.1.gz
+
+
+
+
+command : mv dir1 dir2
+output : 
+(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_1/dir1$ ls
+file1.txt
+(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_1/dir1$ ls /home/mca/Desktop/240905110_OSL/Lab_1/dir2/
+(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_1/dir1$ mv file1.txt /home/mca/Desktop/240905110_OSL/Lab_1/dir2/
+(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_1/dir1$ ls /home/mca/Desktop/240905110_OSL/Lab_1/dir2/
+file1.txt
+
+
+command : rm -i file1.txt
+output : 
+(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_1/dir2$ ls
+file1.txt
+(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_1/dir2$ rm -i file1.txt 
+rm: remove regular file 'file1.txt'? y
+(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_1/dir2$ ls
+
+
+
+command : rm -f file1.txt
+output : 
+(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_1/dir2$ ls
+file1.txt
+(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_1/dir2$ rm -f file1.txt 
+(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_1/dir2$ ls
+
+
+command : rmdir dir1
+output :
+(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_1$ ls
+dir1  dir2  Lab1_1.txt  Lab1_2.txt
+(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_1$ rmdir dir1
+(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_1$ ls
+dir2  Lab1_1.txt  Lab1_2.txt
+
+
+command : find Lab_1/Lab1* >> Lab_1/Lab1_2.txt
+output :
+Lab_1/Lab1_1.txt
+Lab_1/Lab1_2.txt
+
+
+

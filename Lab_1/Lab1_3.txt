@@ -1,0 +1,32 @@
+question : list all files having extension .txt
+command : ls -l *.txt
+output:
+-rw-rw-r-- 1 mca mca  375 Jan  7 10:41 Lab1_1.txt
+-rw-rw-r-- 1 mca mca 2063 Jan  7 10:53 Lab1_2.txt
+-rw-rw-r-- 1 mca mca    0 Jan  7 10:54 Lab1_3.txt
+
+
+
+question : list all filenames containing one digit
+command: ls *[0-9]*
+output : Lab1_1.txt  Lab1_2.txt  Lab1_3.txt
+
+
+question : having maximum length of 4
+command : ls ????*
+ouput:
+(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_1$ ls
+dir2  dir3  hi  l3  Lab1_1.txt  Lab1_2.txt  Lab1_3.txt
+(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_1$ ls -d ????*
+dir2  dir3  Lab1_1.txt  Lab1_2.txt  Lab1_3.txt
+
+
+
+question: filenames without vowels in the name
+commnad : ls !(*[aeiou]*)
+output :
+(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_1$ ls
+bcd.txt  dir2  dir3  hi  Lab1_1.txt  Lab1_2.txt  Lab1_3.txt
+(base) mca@computinglab25-21:~/Desktop/240905110_OSL/Lab_1$ ls !(*[aeiou]*)
+bcd.txt
+

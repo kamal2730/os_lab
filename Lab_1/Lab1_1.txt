@@ -1,0 +1,33 @@
+# pwd
+/home/mca/Desktop/240905110_OSL/Lab_1
+
+
+# ls 
+dir1
+dir2
+Lab1_1.txt
+
+
+# ls -l
+total 12
+drwxrwxr-x 2 mca mca 4096 Jan  7 10:09 dir1
+drwxrwxr-x 2 mca mca 4096 Jan  7 10:09 dir2
+-rw-rw-r-- 1 mca mca   21 Jan  7 10:12 Lab1_1.txt
+
+
+#ls -a
+.
+..
+dir1
+dir2
+Lab1_1.txt
+
+#date
+Wednesday 07 January 2026 10:12:51 AM IST
+
+
+#whereis ls
+ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz
+
+
+
